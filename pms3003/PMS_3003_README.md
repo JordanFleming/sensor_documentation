@@ -16,7 +16,7 @@ The Plantower PMS3003 is a particle sensor that measures particulate matter in t
 * Type: UART
 * Default baud rate: 9600 bps; Parity: None; Stop bit: 1 bit
 * Length: 32 bytes
-  <img src="https://github.com/JordanFleming/sensor_documentation/blob/master/pms3003/images/bit_parsing.jpg?raw=true" width="250" height="250">
+  <img src="https://github.com/JordanFleming/sensor_documentation/blob/master/pms3003/images/bit_parsing.jpg?raw=true" width="100" height="100">
 
 ## Part II. Waggle Specific
 ### Application
