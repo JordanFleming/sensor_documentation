@@ -16,15 +16,17 @@ The following image describes how to connect PMS3003 to a Particle **Photon** bo
 ### Working Logic / Functionality
 #### Output
 * Type: UART
-* Default baud rate: 9600 bps; Parity: None; Stop bit: 1 bit
+* Default baud rate: 9600 bps
+  * Parity: None
+  * Stop bit: 1 bit
 * Length: 32 bytes
   <img src="https://github.com/JordanFleming/sensor_documentation/blob/master/pms3003/images/bit_parsing.jpg?raw=true">
 
 ## Part II. Waggle Specific
 ### Application
-#### How does the sensor work with Photon and P I/O Cloud?
-##### (link to event page on particle.io)
-##### (explain how the data is displayed as a log -- link to log page on particle.io)
+#### How does the sensor work with Photon and Particle I/O Cloud?
+PMS3003 transmits information through the serial port on the Particle Photon. The source code posted below publishes the data as a live stream of events to the Particle cloud (click [here to visit the Particle cloud event console](https://console.particle.io/events)). The data is not stored on the Particle cloud, you must purchase storage space through Particle or save the data to a text file -- or something similar -- in order to retain information. The Particle Photon communicates with the Particle cloud via WiFi. The data can be pushed from the Particle cloud and into Beehive dev ([for more documentation on this process, click here](#beehive)).
+
 ### Source Code from particle.io
     #include "Particle.h"
 
@@ -99,6 +101,6 @@ The following image describes how to connect PMS3003 to a Particle **Photon** bo
     }
     
     
-### Particle Data Interface with Beehive dev
+### Particle Data Interface with Beehive dev <a name="beehive"></a>
 ### Waggle-space ID
 ### Data Structure
