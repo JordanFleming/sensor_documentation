@@ -19,13 +19,17 @@ The following image describes how to connect PMS3003 to a Particle **Photon** bo
 * Default baud rate: 9600 bps
   * Parity: None
   * Stop bit: 1 bit
-* Length: 32 bytes
+* Length: 24 bytes
   <img src="https://github.com/JordanFleming/sensor_documentation/blob/master/pms3003/images/bit_parsing.jpg?raw=true">
 
 ## Part II. Waggle Specific
 ### Application
 #### How does the sensor work with Photon and Particle I/O Cloud?
-PMS3003 transmits information through the serial port on the Particle Photon. The source code posted below publishes the data as a live stream of events to the Particle cloud (click [here to visit the Particle cloud event console](https://console.particle.io/events)). The data is not stored on the Particle cloud, you must purchase storage space through Particle or save the data to a text file -- or something similar -- in order to retain information. The Particle Photon communicates with the Particle cloud via WiFi. The data can be pushed from the Particle cloud and into Beehive dev ([for more documentation on this process, click here](#beehive)).
+PMS3003 transmits a 24 byte hex string through the serial port on the Particle Photon. The source code posted below publishes the data as a live stream of events to the Particle cloud (click [here to visit the Particle cloud event console](https://console.particle.io/events)). 
+
+The data is not stored on the Particle cloud, you must purchase storage space through Particle or save the data to a text file -- or something similar -- in order to retain information. The Particle Photon communicates with the Particle cloud via WiFi. The data can be pushed from the Particle cloud and into Beehive dev ([for more documentation on this process, click here](#beehive)). 
+
+From here the data is parsed in Beehive dev to retrieve human readable particulate matter concentrations in ug/m^3.
 
 #### How do I setup a Particle Photon?
 [Documentation detailing how to setup the Particle Photon can be found here.](https://github.com/charihara/Experimental_Sensors/blob/master/Photon_Instructions.md)
