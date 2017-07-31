@@ -22,32 +22,32 @@ The Plantower PMS3003 is a particle sensor that measures particulate matter in t
 ##### (link to event page on particle.io)
 ##### (explain how the data is displayed as a log -- link to log page on particle.io)
 ### Source Code from particle.io
-      #include "Particle.h"
+    #include "Particle.h"
 
-#define PMS7003 0x01
-// #define PMS3003 0x02
+    #define PMS7003 0x01
+    // #define PMS3003 0x02
 
-#ifdef PMS7003
-#define LENG 32
-#endif 
+    #ifdef PMS7003
+    #define LENG 32
+    #endif 
 
-#ifdef PMS3003
-#define LENG 24
-#endif 
+    #ifdef PMS3003
+    #define LENG 24
+    #endif 
 
-char buf[LENG + 2];
-int data_CRC = 0x00;
-
-
+    char buf[LENG + 2];
+    int data_CRC = 0x00;
 
 
-void setup()
-{
-    Serial1.begin(9600);   //use serial0
-}
 
-void loop()
-{
+
+      void setup()
+      {
+       Serial1.begin(9600);   //use serial0
+      }
+
+      void loop()
+      {
     
     if (Serial1.available() > 0)
     
@@ -92,7 +92,7 @@ void loop()
     
     delay(500);
     
-}
+    }
     
     
 ### Particle Data Interface with Beehive dev
