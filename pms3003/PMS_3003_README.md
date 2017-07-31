@@ -31,6 +31,7 @@ PMS3003 transmits information through the serial port on the Particle Photon. Th
 [Documentation detailing how to setup the Particle Photon can be found here.](https://github.com/charihara/Experimental_Sensors/blob/master/Photon_Instructions.md)
 
 ### Source Code from particle.io
+```C   
     #include "Particle.h"
 
     #define PMS7003 0x01
@@ -102,7 +103,7 @@ PMS3003 transmits information through the serial port on the Particle Photon. Th
     delay(500);
     
     }
-    
+```    
     
 ### Particle Data Interface with Beehive dev <a name="beehive"></a>
 
