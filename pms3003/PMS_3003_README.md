@@ -27,6 +27,9 @@ The following image describes how to connect PMS3003 to a Particle **Photon** bo
 #### How does the sensor work with Photon and Particle I/O Cloud?
 PMS3003 transmits information through the serial port on the Particle Photon. The source code posted below publishes the data as a live stream of events to the Particle cloud (click [here to visit the Particle cloud event console](https://console.particle.io/events)). The data is not stored on the Particle cloud, you must purchase storage space through Particle or save the data to a text file -- or something similar -- in order to retain information. The Particle Photon communicates with the Particle cloud via WiFi. The data can be pushed from the Particle cloud and into Beehive dev ([for more documentation on this process, click here](#beehive)).
 
+#### How do I setup a Particle Photon?
+[Documentation detailing how to setup the Particle Photon can be found here.](https://github.com/charihara/Experimental_Sensors/blob/master/Photon_Instructions.md)
+
 ### Source Code from particle.io
     #include "Particle.h"
 
