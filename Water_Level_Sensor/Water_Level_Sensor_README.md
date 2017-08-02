@@ -9,8 +9,9 @@ This will be finalized once the test results are in
 ~~[PMS 3003 Datasheet](https://github.com/JordanFleming/sensor_documentation/blob/master/datasheets/PMS3003_Datasheet.pdf)~~
 No data sheet currently exists for the water 
 ### Connection Images
-The following image describes how to connect PMS3003 to a Particle **Photon** board.
+The following image describes how to connect PMS3003 to a Particle **Photon** board. Both sensors share the same connection diagram.
 <img src="https://github.com/JordanFleming/sensor_documentation/blob/master/Water_Level_Sensor/images/WaterLevelSensor_B_Connection%20Diagram.png?raw=true" width="650" height="400">
+<img src="https://github.com/JordanFleming/sensor_documentation/blob/master/Water_Level_Sensor/images/WaterLevelSensor_R_ConnectionDiagram.png?raw=true" width="650" height="400">
 
 ### Working Logic / Functionality
 #### Output
