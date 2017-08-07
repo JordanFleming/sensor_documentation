@@ -32,7 +32,7 @@ The data is not stored on the Particle cloud, you must purchase storage space th
 #### How do I setup a Particle Photon?
 [Documentation detailing how to setup the Particle Photon can be found here.](https://github.com/charihara/Experimental_Sensors/blob/master/Photon_Instructions.md)
 
-### Source Code from particle.io <a name="particle"></a>
+### Source Code on particle.io <a name="particle"></a>
 ```C   
 float out = A0; //Sensor output
 int ledpin = D7; //Built_in LED
