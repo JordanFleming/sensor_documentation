@@ -35,7 +35,7 @@ The source code posted below publishes the data as a live stream of events to th
 #### How do I setup a Particle Photon?
 [Documentation detailing how to setup the Particle Photon can be found here.](https://github.com/charihara/Experimental_Sensors/blob/master/Photon_Instructions.md)
 
-### Source Code from particle.io
+### Source Code on particle.io
 ```C
     #include "Particle.h"
     unsigned int current_value_analog;
