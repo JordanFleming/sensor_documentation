@@ -7,7 +7,7 @@ This will be finalized once the test results are in
 
 ### Datasheet
 ~~[PMS 3003 Datasheet](https://github.com/JordanFleming/sensor_documentation/blob/master/datasheets/PMS3003_Datasheet.pdf)~~
-No data sheet currently exists for the water 
+No data sheet currently exists for the water level sensor
 ### Connection Images
 The following image describes how to connect PMS3003 to a Particle **Photon** board. Both sensors share the same connection diagram.
 
@@ -18,11 +18,8 @@ The following image describes how to connect PMS3003 to a Particle **Photon** bo
 
 ### Working Logic / Functionality
 #### Output
-* Type: UART
+* Type: Analog
 * Default baud rate: 9600 bps
-  * Parity: None
-  * Stop bit: 1 bit
-* Length: 24 bytes
   [Insert data output diagram once the output is characterized.]
 
 ## Part II. Waggle Specific
