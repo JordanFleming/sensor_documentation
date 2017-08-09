@@ -2,7 +2,7 @@
 ## Part I. General Overview
 ### What is the sensor and what does it do?
 
-The CR Magnetics CR3110-3000 is a split core current transformer that measures current flowing through a single cord.
+The CR Magnetics CR3110-3000 is a split core current transformer that measures current flowing through a single cord. [Click here for more information on current sensing theory.](http://www.nktechnologies.com/engineering-resources/current-sensing-theory/)
 
 ### Datasheet
 [CR3110-3000 Datasheet](https://github.com/JordanFleming/sensor_documentation/blob/master/datasheets/CR3110_datasheet.jpg)
@@ -22,7 +22,7 @@ The following image describes how to connect CR3110-3000 to a Particle **Photon*
 ## Part II. Waggle Specific
 ### Application
 #### How does the sensor work with Photon and Particle I/O Cloud?
-CR3110-3000 transmits data through an analog pin on the Particle Photon. The sensor outputs voltage which must be converted into current values. The sensor outputs AC voltage which must be turned into DC voltage according to the input specification for the Particle Photon. A full wave bridge rectifier was used to add a DC bias. The full wave bridge rectifier circuit is pictured below.
+CR3110-3000 transmits data through an analog pin on the Particle Photon. The sensor outputs voltage which must be converted into current values. The sensor outputs AC voltage which must be turned into DC voltage according to the input specification for the Particle Photon. A full wave bridge rectifier was used to add a DC bias; [click here for a deeper look at building a full wave bridge rectifier](http://www.electronics-tutorials.ws/diode/diode_6.html). The full wave bridge rectifier circuit is pictured below.
 
 <img src="https://github.com/JordanFleming/sensor_documentation/blob/master/CR3110-3000/images/fullwave_bridge_rectifier.png?raw=true" width="600" height="300">
 
@@ -69,5 +69,6 @@ The source code posted below publishes the data as a live stream of events to th
 
 [Particle to Beehive dev source code](https://github.com/JordanFleming/sensor_documentation/blob/master/Particle_to_Beehive_plugin)
 ### Waggle-space ID
+[Sensor ID Table](https://github.com/JordanFleming/sensor_documentation/blob/master/Sensor_IDs.md)
 ### Data Structure
 
