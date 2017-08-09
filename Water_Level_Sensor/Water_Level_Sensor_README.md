@@ -59,4 +59,5 @@ delay(1000);
 
 [Particle to Beehive dev source code](https://github.com/JordanFleming/sensor_documentation/blob/master/Particle_to_Beehive_plugin)
 ### Waggle-space ID
+[Sensor ID Table](https://github.com/JordanFleming/sensor_documentation/blob/master/Sensor_IDs.md)
 ### Data Structure
