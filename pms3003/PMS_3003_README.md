@@ -7,11 +7,11 @@ The Plantower PMS3003 is a particle sensor that measures particulate matter in t
 ### Datasheet
 [PMS 3003 Datasheet](https://github.com/JordanFleming/sensor_documentation/blob/master/datasheets/PMS3003_Datasheet.pdf)
 ### Connection Images
-<img src="https://github.com/JordanFleming/sensor_documentation/blob/master/pms3003/images/connection_diagram_pms3003.png?raw=true" width="650" height="500">
+<img src="https://github.com/JordanFleming/sensor_documentation/blob/master/pms3003/images/PMS3003_pin_out.jpg?raw=true" width="650" height="400">
 
 The following image describes how to connect PMS3003 to a Particle **Photon** board.
 
-<img src="https://github.com/JordanFleming/sensor_documentation/blob/master/pms3003/images/connection_diagram_pms30003.png?raw=true" width="700" height="500">
+<img src="https://github.com/JordanFleming/sensor_documentation/blob/master/pms3003/images/connection_diagram_pms3003.png?raw=true" width="650" height="500">
 
 ### Working Logic / Functionality
 #### Output
