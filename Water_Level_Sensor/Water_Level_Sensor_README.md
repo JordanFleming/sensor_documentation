@@ -9,7 +9,7 @@ This will be finalized once the test results are in
 
 No data sheet currently exists for the water level sensor
 ### Connection Images
-The following image describes how to connect PMS3003 to a Particle **Photon** board. Both sensors share the same connection diagram.
+The following image describes how to connect PMS3003 to a Particle **Photon** board. Both sensors share the same connection diagram. Additionally, the **Electron** Particle board and Water Level Sensor connection diagram is identical to the Photon connection diagram. For more information on how to configure the Electron, [click here](https://github.com/charihara/Experimental_Sensors/blob/master/Electron_Instructions.md).
 
 
 <img src="https://github.com/JordanFleming/sensor_documentation/blob/master/Water_Level_Sensor/images/WaterLevelSensor_B_ConnectionDiagram.jpg?raw=true" width="650" height="400">
@@ -63,4 +63,3 @@ void loop()
 [Particle to Beehive dev source code](https://github.com/JordanFleming/sensor_documentation/blob/master/Particle_to_Beehive_plugin)
 ### Waggle-space ID
 [Sensor ID Table](https://github.com/JordanFleming/sensor_documentation/blob/master/Sensor_IDs.md)
-### Data Structure
