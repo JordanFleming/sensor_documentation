@@ -7,7 +7,8 @@ The CR Magnetics CR3110-3000 is a split core current transformer that measures c
 ### Datasheet
 [CR3110-3000 Datasheet](https://github.com/JordanFleming/sensor_documentation/blob/master/datasheets/CR3110_datasheet.jpg)
 ### Connection Images
-The following image describes how to connect CR3110-3000 to a Particle **Photon** board.
+The following image describes how to connect CR3110-3000 to a Particle **Photon** board. Additionally, the **Electron** Particle board and CR31100-3000 connection diagram is identical to the Photon connection diagram. For more information on how to configure the Electron, [click here](https://github.com/charihara/Experimental_Sensors/blob/master/Electron_Instructions.md).
+
 
 <img src="https://github.com/JordanFleming/sensor_documentation/blob/master/CR3110-3000/images/CR3110_full_connection_diagram.png?raw=true">
 
