@@ -9,7 +9,8 @@ The Plantower PMS3003 is a particle sensor that measures particulate matter in t
 ### Connection Images
 <img src="https://github.com/JordanFleming/sensor_documentation/blob/master/pms3003/images/PMS3003_pin_out.jpg?raw=true" width="600" height="350">
 
-The following image describes how to connect PMS3003 to a Particle **Photon** board.
+The following image describes how to connect PMS3003 to a Particle **Photon** board. Additionally, the **Electron** Particle board and Water Level Sensor connection diagram is identical to the Photon connection diagram. For more information on how to configure the Electron, [click here](https://github.com/charihara/Experimental_Sensors/blob/master/Electron_Instructions.md).
+
 
 <img src="https://github.com/JordanFleming/sensor_documentation/blob/master/pms3003/images/connection_diagram_pms30003.png?raw=true" width="650" height="500">
 
