@@ -2,11 +2,11 @@
 ## Part I. General Overview
 ### What is the sensor and what does it do?
 
-~~The Water Level Sensor from RobotDyn measures water level in [units of height].~~ The Water Level Sensor from RobotDyn detects the presence of water (i.e. when water touches the metal plates on the sensor), and is therefore used as a proxy.
+The Water Level Sensor from RobotDyn detects the presence of water (i.e. when water touches the metal plates on the sensor), and is therefore used as a proxy.
 This will be finalized once the test results are in
 
 ### Datasheet
-~~[Water Level Senor Datasheet](https://github.com/JordanFleming/sensor_documentation/blob/master/datasheets/PMS3003_Datasheet.pdf)~~
+
 No data sheet currently exists for the water level sensor
 ### Connection Images
 The following image describes how to connect PMS3003 to a Particle **Photon** board. Both sensors share the same connection diagram.
@@ -20,7 +20,6 @@ The following image describes how to connect PMS3003 to a Particle **Photon** bo
 #### Output
 * Type: Analog
 * Default baud rate: 9600 bps
-  [Insert data output diagram once the output is characterized.]
 
 ## Part II. Waggle Specific
 ### Application
