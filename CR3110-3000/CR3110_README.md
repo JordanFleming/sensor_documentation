@@ -13,11 +13,7 @@ The following image describes how to connect CR3110-3000 to a Particle **Photon*
 
 ### Working Logic / Functionality
 #### Output
-* Type:
-* Default baud rate: 9600 bps
-  * Parity:
-  * Stop bit:
-* Length:
+* Type: Voltage
 
 ## Part II. Waggle Specific
 ### Application
@@ -70,5 +66,4 @@ The source code posted below publishes the data as a live stream of events to th
 [Particle to Beehive dev source code](https://github.com/JordanFleming/sensor_documentation/blob/master/Particle_to_Beehive_plugin)
 ### Waggle-space ID
 [Sensor ID Table](https://github.com/JordanFleming/sensor_documentation/blob/master/Sensor_IDs.md)
-### Data Structure
 
