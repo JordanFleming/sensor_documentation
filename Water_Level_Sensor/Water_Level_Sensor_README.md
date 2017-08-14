@@ -14,7 +14,7 @@ The following image describes how to connect PMS3003 to a Particle **Photon** bo
 
 <img src="https://github.com/JordanFleming/sensor_documentation/blob/master/Water_Level_Sensor/images/WaterLevelSensor_B_ConnectionDiagram.jpg?raw=true" width="650" height="400">
 
-<img src="https://github.com/JordanFleming/sensor_documentation/blob/master/Water_Level_Sensor/images/WaterLevelSensor_R_ConnectionDiagram.png?raw=true" width="650" height="400">
+<img src="https://github.com/JordanFleming/sensor_documentation/blob/master/Water_Level_Sensor/images/WaterLevelSensor_R_ConnectionDiagram.jpg?raw=true" width="650" height="400">
 
 ### Working Logic / Functionality
 #### Output
@@ -34,25 +34,29 @@ The data is not stored on the Particle cloud, you must purchase storage space th
 
 ### Source Code on particle.io <a name="particle"></a>
 ```C   
-float out = A0; //Sensor output
-int ledpin = D7; //Built_in LED
+#define Water_Level_Sensor A0 //Sensor output
 
-void setup() {
-pinMode(out, OUTPUT);
-pinMode(ledpin, OUTPUT);
+int water_level_counts;
+
+void setup() 
+{
+    pinMode(Water_Level_Sensor, INPUT);
 }
 
-void loop() {
-int output_volt=(analogRead(out));
-Serial.println(output_volt);
-analogWrite(ledpin, LOW);
-if (output_volt > 600);
-    //analogWrite(A2, 255);
-    digitalWrite(D1, HIGH);
-        //else analogWrite(A2, LOW);
-delay(1000);
+void loop() 
+{
 
+    water_level_counts = 0x00;
+    for(int i = 0x00; i < 16; i++)
+    {
+        water_level_counts = water_level_counts + (analogRead(Water_Level_Sensor));
+        delay(100);
+    }
+    water_level_counts = water_level_counts >> 2;
+    Particle.publish("Water_Level", String(water_level_counts), PRIVATE);
+    
 }
+
 ```    
     
 ### Particle Data Interface with Beehive dev <a name="beehive"></a>
